@@ -10,20 +10,21 @@ npm install random-title-emoji
 
 ## Example
 
-```
+```jsx
 import { useEmojiTitle } from 'random-title-emoji';
 
 const App = () => {
-  let custom = ['🍏', '🍎', '🍐'];
-  return (
-    <div>
-      {useEmojiTitle({
-      	category: 'smileys',
-      	timeInterval: 2000,
-      	limit: 10,
-      	customGroup: custom })}
-    </div>
-  );
+	let custom = ['🍏', '🍎', '🍐'];
+	return (
+		<div>
+			{useEmojiTitle({
+				category: 'smileys',
+				timeInterval: 2000,
+				limit: 10,
+				customGroup: custom
+			})}
+		</div>
+	);
 };
 export default App;
 ```
