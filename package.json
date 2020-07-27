@@ -1,6 +1,6 @@
 {
   "name": "random-title-emoji",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Add a random emoji or a set of emojis in the title of your document.",
   "main": "dist/index.js",
   "devDependencies": {
