@@ -21,6 +21,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "roll": "rollup -c"
   },
+  "keywords": [
+    "react"
+  ],
   "author": "John Raptis",
   "license": "ISC"
 }
