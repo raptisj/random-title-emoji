@@ -2,15 +2,13 @@
 
 A custom hook that add's a random emoji in the title of a React title. NPM **[link](https://www.npmjs.com/package/random-title-emoji)**
 
-
-![git example](./random.gif)
+![gif emoji example](./random.gif)
 
 ## Installation
 
 ```
 npm install random-title-emoji
 ```
-
 
 ## Example
 
