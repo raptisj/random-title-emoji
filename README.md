@@ -2,6 +2,8 @@
 
 A custom hook that add's a random emoji in the title of a React title.
 
+![git example](./random.gif)
+
 ## Installation
 
 ```
