@@ -27,16 +27,8 @@ const useEmojiTitle = ({
 		}
 	}
 
-	function* test(customGroup) {
-		let i = 0;
-		while (i < customGroup.length) {
-			yield customGroup[i];
-			i++;
-		}
-	}
 
 	let oo = useRef(0);
-	//TODO => useCallback?
 	const randomItem = (items, lim) => {
 		if (customGroup.length > 0) {
 			oo.current < customGroup.length - 1 ? oo.current++ : (oo.current = 0);
@@ -79,7 +71,7 @@ const useEmojiTitle = ({
 	}, []);
 
 	useInterval(() => {
-		setRandomEmoji((randomEmoji) => randomItem(getCategory(category), limit));
+		setRandomEmoji(() => randomItem(getCategory(category), limit));
 	}, timeInterval);
 
 	let newTitle = placeLast ? `${initialTitle.current} ${randomEmoji}` : `${randomEmoji} ${initialTitle.current}`;
